@@ -1,0 +1,8 @@
+# Dependências principais
+requests
+
+# Testes
+pytest
+
+# (opcional) Ferramentas auxiliares
+pytest-cov     # para medir cobertura de testes

@@ -1,5 +1,5 @@
 class PayloadBuilder:
-    def __init__(self, league):
+    def __init__(self, league: str):
         self.league = league
 
     def for_chaos_res(self):
@@ -26,7 +26,7 @@ class PayloadBuilder:
             "sort": {"price": "asc"}
         }
 
-    def for_dps_weapon(self, weapon_type):
+    def for_dps_weapon(self, weapon_type: str):
         return {
             "query": {
                 "status": {"option": "online"},
@@ -38,7 +38,7 @@ class PayloadBuilder:
             "sort": {"price": "asc"}
         }
 
-    # 🚀 Novo módulo sugerido pela IA
+    # 🚀 Novo método sugerido pela IA
     def for_rings_with_chaos(self):
         return {
             "query": {
